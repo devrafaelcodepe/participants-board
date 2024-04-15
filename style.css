@@ -19,41 +19,49 @@
 
 body, html {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center; 
     justify-content: center;
+
     overflow-x: hidden;
-    /* overflow-y: hidden; */
 }
 
-body{
-    margin: 10px 0px 10px 0;
+
+/* SCROOL */
+body::-webkit-scrollbar {
+    width:10px;
 }
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--color-first);
+    border-radius: 20px;
+    border: 3px solid var(--color-second);
+}
+
 
 main{
     border: 1px solid var(--color-first);
-    width: 100%;
+    margin: 10px;
+}
+
+/* BOARD */
+.container-board{
+    padding: 10px;
 }
 
 .container-board img{
     width: 100%;
-}
-
-.container-board{
-    width: 100%;
-    padding: 10px;
+    height: 100%;
 }
 
 
-/* BOARD 
-* 1 GRID, TERÁ n COLUNAS IGUAIS, OCUPANDO UMA FRAÇÃO IGUAL DO ESPAÇO DISPONÍVEL 
-*/
+/* 1 GRID, TERÁ n COLUNAS IGUAIS, OCUPANDO UMA FRAÇÃO IGUAL DO ESPAÇO DISPONÍVEL */
 .board{
     display: flex;
     flex-direction: row;
     gap: 10px;
     height: 100%;
-    width: 100%;
+    min-width: 100%;
 }
 
 /* PARTICIPANT */
@@ -73,29 +81,19 @@ main{
     border: 1px solid var(--color-first);
 }
 
-.participant  img{
+.participant img{
     width: 100%;
     height: 100%;
-    padding: 10px;
-}
-
-/* SCROOL */
-body::-webkit-scrollbar {
-    width:10px;
-}
-
-body::-webkit-scrollbar-thumb {
-    background-color: var(--color-first);
-    border-radius: 20px;
-    border: 3px solid var(--color-second);
+    padding: 8px;
 }
 
 
-/* CONTROL BOARD */
+/* CONTROL BOARD (SCROLL ARROW) */
 .control-board{
     display: flex;
     flex-direction: column;
-
+    padding-right: 25px;
+    /* justify-content: space-between; */
 }
 
 button {
@@ -110,8 +108,6 @@ button {
     text-align: center;
 }
 
-#scrollUp {
-}
 
 #scrollDown {
     bottom: 20px;
