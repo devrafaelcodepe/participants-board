@@ -1,0 +1,77 @@
+/* STYLE CONFIG */
+:root{
+    /* COLORS */
+    --color-first: #004E72;
+    --color-first-hover: #013f5c;
+    --color-second: #F1F1F1;
+    --color-text: #FFFFFF;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    
+    border:none;
+    list-style:none;
+}
+
+body, html {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+
+    height: 100%;
+    overflow-x: hidden;
+}
+
+body{
+    margin: 10px 0px 10px 0;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid var(--color-first);
+}
+
+
+/* BOARD 
+* 1 GRID, TERÁ n COLUNAS IGUAIS, OCUPANDO UMA FRAÇÃO IGUAL DO ESPAÇO DISPONÍVEL 
+*/
+.board{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    max-width: 600px;
+    max-height: 100%;
+    gap: 5px;
+}
+
+
+/* PARTICIPANT */
+.participant{
+    width: 64px;
+    height: 64px;
+    cursor: pointer;
+    border: 1px solid var(--color-first);
+}
+
+.participant  img{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+
+/* SCROOL */
+body::-webkit-scrollbar {
+    width:10px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--color-first);
+    border-radius: 20px;
+    border: 3px solid var(--color-second);
+}
