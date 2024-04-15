@@ -21,7 +21,9 @@ body, html {
     display: flex;
     flex-direction: column;
     align-items: center; 
+    justify-content: center;
     overflow-x: hidden;
+    /* overflow-y: hidden; */
 }
 
 body{
@@ -29,12 +31,17 @@ body{
 }
 
 main{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
     border: 1px solid var(--color-first);
+    width: 100%;
+}
+
+.container-board img{
+    width: 100%;
+}
+
+.container-board{
+    width: 100%;
+    padding: 10px;
 }
 
 
@@ -42,6 +49,15 @@ main{
 * 1 GRID, TERÁ n COLUNAS IGUAIS, OCUPANDO UMA FRAÇÃO IGUAL DO ESPAÇO DISPONÍVEL 
 */
 .board{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    height: 100%;
+    width: 100%;
+}
+
+/* PARTICIPANT */
+.participants{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     max-width: 600px;
@@ -50,7 +66,6 @@ main{
 }
 
 
-/* PARTICIPANT */
 .participant{
     width: 64px;
     height: 64px;
@@ -65,7 +80,6 @@ main{
 }
 
 /* SCROOL */
-/*
 body::-webkit-scrollbar {
     width:10px;
 }
@@ -74,7 +88,15 @@ body::-webkit-scrollbar-thumb {
     background-color: var(--color-first);
     border-radius: 20px;
     border: 3px solid var(--color-second);
-} */
+}
+
+
+/* CONTROL BOARD */
+.control-board{
+    display: flex;
+    flex-direction: column;
+
+}
 
 button {
     position: fixed;
@@ -85,17 +107,17 @@ button {
     color: #fff;
     background-color: var(--color-first);
     cursor: pointer;
-    right: 50px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
     text-align: center;
+}
+
+#scrollUp {
 }
 
 #scrollDown {
     bottom: 20px;
 }
+
+
 
 
 
