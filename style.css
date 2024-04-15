@@ -24,7 +24,6 @@ body, html {
     justify-content: center;
 
     overflow-x: hidden;
-    padding: 10px;
 }
 
 
@@ -93,8 +92,7 @@ main{
 .control-board{
     display: flex;
     flex-direction: column;
-    padding-right: 25px;
-    /* justify-content: space-between; */
+    padding: 0 40px;
 }
 
 button {
@@ -112,6 +110,13 @@ button {
 
 #scrollDown {
     bottom: 20px;
+}
+
+@media only screen and (max-width: 480px) {
+/* PARTICIPANT */
+.participants{
+    grid-template-columns: repeat(3, 1fr);
+}
 }
 
 
