@@ -90,11 +90,13 @@ main{
 
 /* CONTROL BOARD (SCROLL ARROW) */
 .control-board{
+    padding-right: 60px;
+}
+
+.buttons{
     display: flex;
     flex-direction: column;
-    padding: 0 60px;
-    height: 100%;
-    background-color: red;
+    gap: 69px;
 }
 
 button {
@@ -113,8 +115,14 @@ button {
 }
 
 
+#scrollUp {
+    /* bottom: 20px; */
+    /* left: 20px; */
+}
+
 #scrollDown {
-    bottom: 20px;
+    /* bottom: 0.1px; */
+    /* right: 20px; */
 }
 
 @media only screen and (max-width: 480px) {
