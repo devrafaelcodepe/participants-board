@@ -3,7 +3,10 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        
         <title>Participants Board</title>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
         <link rel="stylesheet" href="style.css">
     </head>
 
@@ -11,7 +14,8 @@
         <main>
             <section class="container-board">
                 <img src="assets/logo/logo-otimo.png" alt="">
-                <div class="board">
+                <div class="error">Erro. Recarregue e tente novamente</div>
+                <div class="board" id="board">
                     <section class="participants">
                         <div class="participant">
                             <img src="https://www.itau.com.br/assets/dam/publisher/07_itau_empresas/13_open_banking/logos_regulatorio_bacen/opb_log_reg_bac_itau_img_01.svg" alt="Logo" onclick="showParticipantSelected('ITAÚ')">
@@ -91,93 +95,12 @@
                         <div class="participant">
                             <img src="assets/logo/logo-default.png" alt="Logo" onclick="showParticipantSelected('PARTICIPANT SELECTED')">
                         </div>
-
-                        <div class="participant">
-                            <img src="assets/logo/logo-default.png" alt="Logo" onclick="showParticipantSelected('PARTICIPANT SELECTED')">
-                        </div>
-
-                        <div class="participant">
-                            <img src="assets/logo/logo-default.png" alt="Logo" onclick="showParticipantSelected('PARTICIPANT SELECTED')">
-                        </div>
-
-                        <div class="participant">
-                            <img src="assets/logo/logo-default.png" alt="Logo" onclick="showParticipantSelected('PARTICIPANT SELECTED')">
-                        </div>
-
-                        <div class="participant">
-                            <img src="assets/logo/logo-default.png" alt="Logo" onclick="showParticipantSelected('PARTICIPANT SELECTED')">
-                        </div>
-
-                        <div class="participant">
-                            <img src="assets/logo/logo-default.png" alt="Logo" onclick="showParticipantSelected('PARTICIPANT SELECTED')">
-                        </div>
-
-                        <div class="participant">
-                            <img src="assets/logo/logo-default.png" alt="Logo" onclick="showParticipantSelected('PARTICIPANT SELECTED')">
-                        </div>
-                        <div class="participant">
-                            <img src="assets/logo/logo-default.png" alt="Logo" onclick="showParticipantSelected('PARTICIPANT SELECTED')">
-                        </div>
-
-                        <div class="participant">
-                            <img src="assets/logo/logo-default.png" alt="Logo" onclick="showParticipantSelected('PARTICIPANT SELECTED')">
-                        </div>
-
-                        <div class="participant">
-                            <img src="assets/logo/logo-default.png" alt="Logo" onclick="showParticipantSelected('PARTICIPANT SELECTED')">
-                        </div>
-
-                        <div class="participant">
-                            <img src="assets/logo/logo-default.png" alt="Logo" onclick="showParticipantSelected('PARTICIPANT SELECTED')">
-                        </div>
-
-                        <div class="participant">
-                            <img src="assets/logo/logo-default.png" alt="Logo" onclick="showParticipantSelected('PARTICIPANT SELECTED')">
-                        </div>
-
-                        <div class="participant">
-                            <img src="assets/logo/logo-default.png" alt="Logo" onclick="showParticipantSelected('PARTICIPANT SELECTED')">
-                        </div>
-
-                        <div class="participant">
-                            <img src="assets/logo/logo-default.png" alt="Logo" onclick="showParticipantSelected('PARTICIPANT SELECTED')">
-                        </div>
-
-                        <div class="participant">
-                            <img src="assets/logo/logo-default.png" alt="Logo" onclick="showParticipantSelected('PARTICIPANT SELECTED')">
-                        </div>
-
-                        <div class="participant">
-                            <img src="assets/logo/logo-default.png" alt="Logo" onclick="showParticipantSelected('PARTICIPANT SELECTED')">
-                        </div>
-                        <div class="participant">
-                            <img src="assets/logo/logo-default.png" alt="Logo" onclick="showParticipantSelected('PARTICIPANT SELECTED')">
-                        </div>
-
-                        <div class="participant">
-                            <img src="assets/logo/logo-default.png" alt="Logo" onclick="showParticipantSelected('PARTICIPANT SELECTED')">
-                        </div>
-
-                        <div class="participant">
-                            <img src="assets/logo/logo-default.png" alt="Logo" onclick="showParticipantSelected('PARTICIPANT SELECTED')">
-                        </div>
-
-                        <div class="participant">
-                            <img src="assets/logo/logo-default.png" alt="Logo" onclick="showParticipantSelected('PARTICIPANT SELECTED')">
-                        </div>
-                    </section>
-                    
-                    <section class="buttons">
-                        <section class="control-board">
-                            <button id="scrollUp">&#8593;</button>
-                        </section>
-                        <section class="control-board">
-                            <button id="scrollDown">&#8595;</button>
-                        </section>
+                        <button class="see-more" id="seeMore" onclick="seeMore()">Veja mais</button>
                     </section>
                 </div>
-
+                
             </section>
+
         </main>
         
 
